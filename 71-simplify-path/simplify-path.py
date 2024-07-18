@@ -4,7 +4,7 @@ class Solution:
         for c in path.split("/"):
             if stack and c == ".." :
                 stack.pop()
-            elif c != "." and c != "" and c != "..":
+            elif c not in ['.', '..', '']:
                 stack.append(c)
 
         return "/" + "/".join(stack)
