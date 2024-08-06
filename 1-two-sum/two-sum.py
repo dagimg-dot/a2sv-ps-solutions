@@ -3,7 +3,9 @@ class Solution:
         dic = {}
 
         for i in range(len(nums)):
-            if (target - nums[i]) not in dic:
-                dic[nums[i]] = i
+            diff = target - nums[i]
+            if diff in dic:
+                return [dic[diff], i]
             else:
-                return [i, dic[target - nums[i]]]
+                dic[nums[i]] = i
+            
