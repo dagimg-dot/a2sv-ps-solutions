@@ -18,3 +18,22 @@ class Solution:
                 seq = 0
         
         return max(max_seq, seq) + 1
+
+        # if nums == []:
+        #     return 0
+
+        # st = set(nums)
+        # longest = 1
+
+        # for n in st:
+        #     if n - 1 in st:
+        #         count = 1
+        #         x = n
+
+        #         while x + 1 in st:
+        #             count += 1
+        #             x += 1
+                
+        #         longest = max(longest, count)
+            
+        # return longest + 1
