@@ -1,7 +1,7 @@
 class Solution:
     def maxSum(self, grid: List[List[int]]) -> int:
         n, m = len(grid), len(grid[0])
-        max_sum = float('-inf')
+        max_sum = 0
 
         for i in range(n - 2):
             for j in range(m - 2):
