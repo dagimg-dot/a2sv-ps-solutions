@@ -13,8 +13,8 @@ class Solution:
         
         for i in range(n):
             for j in range(m):
-                val = invertCell(image[i][j])
-                image[i][j] = val
+                image[i][j] = invertCell(image[i][j])
+                
             
         return image
         
