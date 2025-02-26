@@ -5,13 +5,15 @@ class RandomizedSet:
 
     def insert(self, val: int) -> bool:
         if not self.dataset.get(val,False):
-            self.dataset[val]=1
+            self.dataset[val] = 1
             return True
+
         return False
 
     def remove(self, val: int) -> bool:
         if self.dataset.pop(val,False):
             return True
+            
         return False
 
     def getRandom(self) -> int:
