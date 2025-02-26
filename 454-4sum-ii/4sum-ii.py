@@ -1,12 +1,6 @@
 class Solution:
     def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
-        nums1.sort()
-        nums2.sort()
-        nums3.sort()
-        nums4.sort()
-
         count = 0
-
         ab = defaultdict(int)
 
         for num1 in nums1:
