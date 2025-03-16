@@ -20,5 +20,3 @@ class Solution:
             nums1[end_idx] = nums2[n-1]
             n-=1
             end_idx-=1
-            
-        
