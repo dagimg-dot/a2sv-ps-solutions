@@ -12,7 +12,6 @@ class Solution:
 
         for r in range(len(p), len(s)):
             sc[s[r]] = sc.get(s[r], 0) + 1
-
             sc[s[left]] -= 1
 
             if sc[s[left]] == 0:
