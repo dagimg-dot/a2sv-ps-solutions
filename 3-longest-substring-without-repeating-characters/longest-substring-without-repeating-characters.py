@@ -1,6 +1,5 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-
         if len(s) == 0:
             return 0
 
@@ -22,3 +21,5 @@ class Solution:
                 i += 1
 
         return max_count
+
+        
