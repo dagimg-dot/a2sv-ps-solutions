@@ -5,7 +5,7 @@ class NumMatrix:
         m = len(matrix[0])
 
         self.matrix = matrix
-        self.presum = [[0] * (m + 1) for _ in range(n + 1)] 
+        self.presum = [[0] * (m + 1) for _ in range(n + 1)]
 
         for i in range(n):
             for j in range(m):
