@@ -15,7 +15,7 @@ class MyLinkedList:
         
         current = self.head
 
-        for _ in range(0, index):
+        for _ in range(index):
             current = current.next
         
         return current.val
@@ -62,7 +62,7 @@ class MyLinkedList:
         if index == 0:
             self.head = self.head.next
         else:
-            for _ in range(0, index - 1):
+            for _ in range(index - 1):
                 current = current.next
             current.next = current.next.next
 
