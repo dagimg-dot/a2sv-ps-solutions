@@ -6,7 +6,6 @@ class Solution:
         stack = []
 
         open = ['(', '[','{']
-        close = [')',']','}']
         paren = ["()","[]","{}"]
 
         for p in s:
