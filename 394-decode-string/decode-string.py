@@ -1,9 +1,11 @@
 class Solution:
     def decodeString(self, s: str) -> str:
         n = len(s)
+
         def dfs(start):
             sinb = ""
             mul = 0
+
             while start[0]<n:
                 if s[start[0]] == '[':
                     start[0]+=1
@@ -16,6 +18,9 @@ class Solution:
                 else:
                     sinb+=s[start[0]]
                 start[0]+=1
+
             return sinb
+            
         a = dfs([0])
+
         return a
