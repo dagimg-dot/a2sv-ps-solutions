@@ -17,10 +17,8 @@ class Solution:
             if node.val == startValue:
                 leftPath = curr
                 is_left = True
-                print("reach start")
             if node.val == destValue:
                 rightPath = curr
-                print("reach dest")
                 is_right = True
             if node.left:
                 st.append([node.left, curr + "L"])
