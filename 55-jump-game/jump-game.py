@@ -7,5 +7,3 @@ class Solution:
                 target = i
         
         return target == 0
-
-
